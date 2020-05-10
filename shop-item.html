@@ -84,8 +84,24 @@
 	<section class="modal modal-login">
 		<h2 class="modal-login__title">ЛИЧНЫЙ КАБИНЕТ</h2>
 		<p class="modal-login__text">ВВЕДИТЕ, ПОЖАЛУЙСТА, СВОЙ ЛОГИН И ПАРОЛЬ</p>
-		<!-- FORM -->
-		<span class="modal-close">X</span>
+			<form action="#" class="modal-login__form">
+				<p>
+					<label for="modal-login__login" class="modal-login__login-label visually-hidden">Ваше имя</label>
+					<input type="text" class="modal-login__login" name="login" id="modal-login__login" placeholder="Логин">
+				</p>
+				<p>
+					<label for="modal-login__password" class="modal-login__password-label visually-hidden">Телефон</label>
+					<input type="password" class="modal-login__password" name="password" id="modal-login__password" placeholder="Пароль">
+				</p>
+				<p>
+					<label for="modal-login__remember" class="modal-login__remember-label">Запомните меня</label>
+					<input type="checkbox" class="modal-login__remember visually-hidden" id="modal-login__remember">
+					<span class="modal-login__checkbox"></span>
+				</p>
+				<a href="#" class="modal-login__restore">Я забыл пароль</a>
+				<button class="button modal-login__button" type="submit">Войти</button>
+			</form>
+		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 		
 </body>

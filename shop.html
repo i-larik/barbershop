@@ -30,7 +30,55 @@
 		</ul>
 		<section class="catalog-filter">
 			<h2 class="visually-hidden">ФИЛЬТР ТОВАРОВ</h2>
-			<!-- FORM -->
+			<form action="#" class="catalog-filter__form" method="get">
+				<fieldset class="catalog-filter__makers makers">
+					<legend>Производители:</legend>
+					<ul class="makers__list">
+						<li class="makers__item">
+							<input type="checkbox" class="makers__checkbox visually-hidden checkbox" name="baxter_of_california" id="baxter_of_california">
+							<label class="makers__label" for="baxter_of_california">Baxter of California</label>
+						</li>
+						<li class="makers-item">
+							<input type="checkbox" class="makers__checkbox visually-hidden checkbox" name="mr_natty" id="mr_natty">
+							<label class="makers__label" for="mr_natty">Mr Natty</label>
+						</li>
+						<li class="makers-item">
+							<input type="checkbox" class="makers__checkbox visually-hidden checkbox" name="suavecito" id="suavecito">
+							<label class="makers__label" for="suavecito">Suavecito</label>
+						</li>
+						<li class="makers-item">
+							<input type="checkbox" class="makers__checkbox visually-hidden checkbox" name="malin_goetz" id="malin_goetz">
+							<label class="makers__label" for="malin_goetz">Malin+Goetz</label>
+						</li>
+						<li class="makers-item">
+							<input type="checkbox" class="makers__checkbox visually-hidden checkbox" name="murrays" id="murrays">
+							<label class="makers__label" for="murrays">Murray’s</label>
+						</li>
+						<li class="makers-item">
+							<input type="checkbox" class="makers__checkbox visually-hidden checkbox" name="american_crew" id="american_crew">
+							<label class="makers__label" for="american_crew">American Crew</label>
+						</li>
+					</ul>
+				</fieldset>
+				<fieldset class="catalog-filter__groups">
+					<legend>Группы товаров:</legend>
+					<ul class="groups-list">
+						<li class="groups-item">
+							<input type="radio" class="groups__radio visually-hidden radio" value="shaving" name="product-group" id="groups-shaving">
+							<label for="groups-shaving">Бритвенные принадлежности</label>
+						</li>
+						<li class="groups-item">
+							<input type="radio" class="groups__radio visually-hidden radio" value="hair-care" name="product-group" id="groups-hair-care">
+							<label for="groups-hair-care">Средства для ухода</label>
+						</li>
+						<li class="groups-item">
+							<input type="radio" class="groups__radio visually-hidden radio" value="accessories" name="product-group" id="groups-accessories">
+							<label for="groups-accessories">Аксессуары</label>
+						</li>
+					</ul>
+				</fieldset>
+				<button class="button catalog-filter__button" type="submit">Показать</button>
+			</form>
 		</section>
 		<section class="catalog">
 			<h2 class="visually-hidden">СРЕДСТВА ДЛЯ УХОДА</h2>
@@ -41,8 +89,6 @@
 							Набор для путешествий<br>
 							«Baxter of California»
 						</h3>
-					</a>
-					<a href="#" class="catalog-item__link">
 						<img class="catalog-item__image" src="#" alt="Набор для путешествий «Baxter of California»">
 					</a>
 					<p class="catalog-item__price">
@@ -56,8 +102,6 @@
 							Увлажняющий кондиционер<br>
 							«Baxter of California»
 						</h3>
-					</a>
-					<a href="#" class="catalog-item__link">
 						<img class="catalog-item__image" src="#" alt="Увлажняющий кондиционер «Baxter of California»">
 					</a>
 					<p class="catalog-item__price">
@@ -71,8 +115,6 @@
 							Гель для волос<br>
 							«SUAVECITO»
 						</h3>
-					</a>
-					<a href="#" class="catalog-item__link">
 						<img class="catalog-item__image" src="#" alt="Гель для волос «SUAVECITO»">
 					</a>
 					<p class="catalog-item__price">
@@ -86,8 +128,6 @@
 							Глина для укладки волос<br>
 							«American crew»
 						</h3>
-					</a>
-					<a href="#" class="catalog-item__link">
 						<img class="catalog-item__image" src="#" alt="Глина для укладки волос «American crew»">
 					</a>
 					<p class="catalog-item__price">
@@ -101,8 +141,6 @@
 							Гель для волос<br>
 							«AMERICAN CREW»
 						</h3>
-					</a>
-					<a href="#" class="catalog-item__link">
 						<img class="catalog-item__image" src="#" alt="Гель для волос «AMERICAN CREW»">
 					</a>
 					<p class="catalog-item__price">
@@ -116,8 +154,6 @@
 							Набор для бритья<br>
 							«Baxter of California»
 						</h3>
-					</a>
-					<a href="#" class="catalog-item__link">
 						<img class="catalog-item__image" src="#" alt="Набор для бритья «Baxter of California»">
 					</a>
 					<p class="catalog-item__price">
@@ -158,8 +194,24 @@
 	<section class="modal modal-login">
 		<h2 class="modal-login__title">ЛИЧНЫЙ КАБИНЕТ</h2>
 		<p class="modal-login__text">ВВЕДИТЕ, ПОЖАЛУЙСТА, СВОЙ ЛОГИН И ПАРОЛЬ</p>
-		<!-- FORM -->
-		<span class="modal-close">X</span>
+			<form action="#" class="modal-login__form">
+				<p>
+					<label for="modal-login__login" class="modal-login__login-label visually-hidden">Ваше имя</label>
+					<input type="text" class="modal-login__login" name="login" id="modal-login__login" placeholder="Логин">
+				</p>
+				<p>
+					<label for="modal-login__password" class="modal-login__password-label visually-hidden">Телефон</label>
+					<input type="password" class="modal-login__password" name="password" id="modal-login__password" placeholder="Пароль">
+				</p>
+				<p>
+					<label for="modal-login__remember" class="modal-login__remember-label">Запомните меня</label>
+					<input type="checkbox" class="modal-login__remember visually-hidden" id="modal-login__remember">
+					<span class="modal-login__checkbox"></span>
+				</p>
+				<a href="#" class="modal-login__restore">Я забыл пароль</a>
+				<button class="button modal-login__button" type="submit">Войти</button>
+			</form>
+		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 
 </body>
