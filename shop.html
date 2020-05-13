@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Магазин</title>
+	<link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,11 +18,11 @@
 				<li class="main-nav__list"><a class="main-nav__link" href="#">КОНТАКТЫ</a></li>
 			</ul>
 			<ul class="main_nav__user-navigation">
-				<li class="main-nav__user-list"><a href="#" class="main-nav__user-link">ВХОД</a></li>
+				<li class="main-nav__user-list"><a href="#" class="main-nav__link">ВХОД</a></li>
 			</ul>
 		</nav>
 	</header>
-	<main class="container">
+	<main class="container inner-page">
 		<h1 class="container__title">СРЕДСТВА ДЛЯ УХОДА</h1>
 		<ul class="container__breadcrumbs breadcrumbs">
 			<li class="breadcrumbs__item"><a href="index.html" class="breadcrumbs__link">ГЛАВНАЯ</a></li>
@@ -35,45 +36,45 @@
 					<legend>Производители:</legend>
 					<ul class="makers__list">
 						<li class="makers__item">
-							<input type="checkbox" class="makers__checkbox visually-hidden checkbox" name="baxter_of_california" id="baxter_of_california">
+							<input type="checkbox" class="makers__checkbox visually-hidde checkbox" name="baxter_of_california" id="baxter_of_california">
 							<label class="makers__label" for="baxter_of_california">Baxter of California</label>
 						</li>
 						<li class="makers-item">
-							<input type="checkbox" class="makers__checkbox visually-hidden checkbox" name="mr_natty" id="mr_natty">
+							<input type="checkbox" class="makers__checkbox visually-hidde checkbox" name="mr_natty" id="mr_natty">
 							<label class="makers__label" for="mr_natty">Mr Natty</label>
 						</li>
 						<li class="makers-item">
-							<input type="checkbox" class="makers__checkbox visually-hidden checkbox" name="suavecito" id="suavecito">
+							<input type="checkbox" class="makers__checkbox visually-hidde checkbox" name="suavecito" id="suavecito">
 							<label class="makers__label" for="suavecito">Suavecito</label>
 						</li>
 						<li class="makers-item">
-							<input type="checkbox" class="makers__checkbox visually-hidden checkbox" name="malin_goetz" id="malin_goetz">
+							<input type="checkbox" class="makers__checkbox visually-hidde checkbox" name="malin_goetz" id="malin_goetz">
 							<label class="makers__label" for="malin_goetz">Malin+Goetz</label>
 						</li>
 						<li class="makers-item">
-							<input type="checkbox" class="makers__checkbox visually-hidden checkbox" name="murrays" id="murrays">
+							<input type="checkbox" class="makers__checkbox visually-hidde checkbox" name="murrays" id="murrays" disabled="">
 							<label class="makers__label" for="murrays">Murray’s</label>
 						</li>
 						<li class="makers-item">
-							<input type="checkbox" class="makers__checkbox visually-hidden checkbox" name="american_crew" id="american_crew">
+							<input type="checkbox" class="makers__checkbox visually-hidde checkbox" name="american_crew" id="american_crew">
 							<label class="makers__label" for="american_crew">American Crew</label>
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset class="catalog-filter__groups">
+				<fieldset class="catalog-filter__groups groups">
 					<legend>Группы товаров:</legend>
 					<ul class="groups-list">
 						<li class="groups-item">
-							<input type="radio" class="groups__radio visually-hidden radio" value="shaving" name="product-group" id="groups-shaving">
-							<label for="groups-shaving">Бритвенные принадлежности</label>
+							<input type="radio" class="groups__radio visually-hidde radio" value="shaving" name="product-group" id="groups-shaving">
+							<label class="groups__label" for="groups-shaving">Бритвенные принадлежности</label>
 						</li>
 						<li class="groups-item">
-							<input type="radio" class="groups__radio visually-hidden radio" value="hair-care" name="product-group" id="groups-hair-care">
-							<label for="groups-hair-care">Средства для ухода</label>
+							<input type="radio" class="groups__radio visually-hidde radio" value="hair-care" name="product-group" id="groups-hair-care">
+							<label class="groups__label" for="groups-hair-care">Средства для ухода</label>
 						</li>
 						<li class="groups-item">
-							<input type="radio" class="groups__radio visually-hidden radio" value="accessories" name="product-group" id="groups-accessories">
-							<label for="groups-accessories">Аксессуары</label>
+							<input type="radio" class="groups__radio visually-hidde radio" value="accessories" name="product-group" id="groups-accessories">
+							<label class="groups__label" for="groups-accessories">Аксессуары</label>
 						</li>
 					</ul>
 				</fieldset>
@@ -86,20 +87,20 @@
 				<li class="catalog-item">
 					<a href="#" class="catalog-item__link">
 						<h3 class="catalog-item__title">
-							Набор для путешествий<br>
+							<span class="no-upper">Набор для путешествий</span><br>
 							«Baxter of California»
 						</h3>
 						<img class="catalog-item__image" src="img/shop/product1.jpg" height="165" width="220" alt="Набор для путешествий «Baxter of California»">
 					</a>
 					<p class="catalog-item__price">
 						<b>2 900 ₽</b>
-						<a href="#" class="button">КУПИТЬ</a>
+						<a href="shop-item.html" class="button">КУПИТЬ</a>
 					</p>
 				</li>
 				<li class="catalog-item">
 					<a href="#" class="catalog-item__link">
 						<h3 class="catalog-item__title">
-							Увлажняющий кондиционер<br>
+							<span class="no-upper">Увлажняющий кондиционер</span><br>
 							«Baxter of California»
 						</h3>
 						<img class="catalog-item__image" src="img/shop/product2.jpg" alt="Увлажняющий кондиционер «Baxter of California»">
@@ -112,7 +113,7 @@
 				<li class="catalog-item">
 					<a href="#" class="catalog-item__link">
 						<h3 class="catalog-item__title">
-							Гель для волос<br>
+							<span class="no-upper">Гель для волос</span><br>
 							«SUAVECITO»
 						</h3>
 						<img class="catalog-item__image" src="img/shop/product3.jpg" alt="Гель для волос «SUAVECITO»">
@@ -125,7 +126,7 @@
 				<li class="catalog-item">
 					<a href="#" class="catalog-item__link">
 						<h3 class="catalog-item__title">
-							Глина для укладки волос<br>
+							<span class="no-upper">Глина для укладки волос</span><br>
 							«American crew»
 						</h3>
 						<img class="catalog-item__image" src="img/shop/product4.jpg" alt="Глина для укладки волос «American crew»">
@@ -138,7 +139,7 @@
 				<li class="catalog-item">
 					<a href="#" class="catalog-item__link">
 						<h3 class="catalog-item__title">
-							Гель для волос<br>
+							<span class="no-upper">Гель для волос</span><br>
 							«AMERICAN CREW»
 						</h3>
 						<img class="catalog-item__image" src="img/shop/product5.jpg" alt="Гель для волос «AMERICAN CREW»">
@@ -151,7 +152,7 @@
 				<li class="catalog-item">
 					<a href="#" class="catalog-item__link">
 						<h3 class="catalog-item__title">
-							Набор для бритья<br>
+							<span class="no-upper">Набор для бритья</span><br>
 							«Baxter of California»
 						</h3>
 						<img class="catalog-item__image" src="img/shop/product6.jpg" alt="Набор для бритья «Baxter of California»">
@@ -163,10 +164,10 @@
 				</li>
 		</ul>
 		<ul class="pagination catalog__pagination">
-			<li class="pagination__item"><a href="#" class="pagination__link">1</a></li>
+			<li class="pagination__item"><a href="#" class="pagination__link button">1</a></li>
 			<li class="pagination__item pagination__item_active">2</li>
-			<li class="pagination__item"><a href="#" class="pagination__link">3</a></li>
-			<li class="pagination__item"><a href="#" class="pagination__link">4</a></li>
+			<li class="pagination__item"><a href="#" class="pagination__link button">3</a></li>
+			<li class="pagination__item"><a href="#" class="pagination__link button">4</a></li>
 		</ul>
 		</section>
 	</main>
@@ -180,14 +181,14 @@
 		<div class="main-footer__social">
 			<b>ДАВАЙТЕ ДРУЖИТЬ!</b>
 			<ul>
-				<li class="main-footer__social-list"><a href="#" class="main-footer__social-button"></a></li>
-				<li class="main-footer__social-list"><a href="#" class="main-footer__social-button"></a></li>
-				<li class="main-footer__social-list"><a href="#" class="main-footer__social-button"></a></li>
+				<li class="main-footer__social-list"><a href="#" class="main-footer__social-button" aria-label="Вконтакте">Вконтакте</a></li>
+				<li class="main-footer__social-list"><a href="#" class="main-footer__social-button" aria-label="Фейсбук">Фейсбук</a></li>
+				<li class="main-footer__social-list"><a href="#" class="main-footer__social-button" aria-label="Инстаграм">Инстаграм</a></li>
 			</ul>
 		</div>
 		<p class="main-footer__developed">
 			<b>РАЗРАБОТАНО:</b>
-			<a href="#" class="main-footer__button">HTML ACADEMY</a>
+			<a href="#" class="main-footer__button button">HTML ACADEMY</a>
 		</p>
 	</footer>
 

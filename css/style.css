@@ -8,3 +8,273 @@
 	clip: rect(0 0 0 0);
 	overflow: hidden;
 }
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #000000;
+	background-image: url(../img/index/Layer.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+
+	font-family: 'PT Sans Narrow', Arial, sans-serif;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+}
+
+.button {
+ 	font: inherit;
+
+ 	color: #ffffff;
+ 	background-color: #000000;
+ 	border: none;
+ 	text-align: center;
+ 	vertical-align: middle;
+ 	text-transform: uppercase;
+ }
+
+.button:hover,
+.button:active,
+.button:focus {
+	background-color: #663d15;
+}
+
+.main-nav {
+	background-color: #000000;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.main-nav__link {
+	color: #ffffff;
+}
+
+.main-nav__link:hover,
+.main-nav__link:active,
+.main-nav__link:focus {
+	background-color: #242424;
+}
+
+.privelege-item {
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+.index-columns {
+	background-color: #f7f4f1;
+	background-image: url(../img/index/Layer_10.jpg);
+	background-position: 0 0;
+	background-repeat: repeat;
+
+	color: #000000;
+}
+
+.title,
+.privelege-item__title {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.news__time {
+	text-transform: none;
+}
+
+.galery__foto {
+	border: 7px solid #ffffff;
+}
+
+.signup__form input {
+	font: inherit;
+
+	border: 2px solid #000000;
+	background-color: transparent;
+	opacity: 0.7;
+}
+
+.signup__form input:focus,
+.modal-login__form input:focus {
+	border-color: #663d15;
+}
+
+.main-footer {
+	background-color: #232323;
+	background-image: url(../img/index/Layer_footer.jpg);
+}
+
+.main-footer__contacts a {
+	text-decoration: underline;
+	color: #ffffff;
+}
+
+.main-footer__social a {
+	color: #ffffff;
+}
+
+.main-footer__contacts a:hover,
+.main-footer__contacts a:focus {
+	text-decoration: none;
+}
+
+.modal {
+	background-color: #f7f4f1;
+	background-image: url(../img/index/Layer_10.jpg);
+	background-position: 0 0;
+	background-repeat: repeat;
+	
+	color: #000000;
+}
+
+.modal-login__form input {
+	font: inherit;
+	text-transform: uppercase;
+
+	border: 2px solid #000000;
+	background-color: transparent;
+	opacity: 0.7;
+}
+
+.modal-login__remember-label:hover,
+.modal-login__remember-label:focus {
+	color: #663d15;
+}
+
+.modal-login__restore:hover,
+.modal-login__restore:focus {
+	text-decoration: none;
+}
+
+.modal-login__restore {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.modal-map__map {
+	border: 7px solid #ffffff;
+}
+
+
+
+.inner-page {
+	background-color: #f7f4f1;
+	background-image: url(../img/index/Layer_10.jpg);
+	background-position: 0 0;
+	background-repeat: repeat;
+	
+	color: #000000;
+}
+
+.inner-page a {
+	color: #000000;
+}
+
+.container__title {
+	font-size: 30px;
+	line-height: 42px;
+}
+
+.main-nav__list_active a {
+	border-bottom: 4px solid #ffffff;
+}
+
+.breadcrumbs__link:hover,
+.breadcrumbs__link:active {
+	text-decoration: underline;
+}
+
+.breadcrumbs__item_active {
+	color: #aba9a7;
+}
+
+.makers,
+.groups {
+	border: none;
+}
+
+.makers legend,
+.groups legend {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.makers__checkbox:hover + .makers__label,
+.makers__checkbox:focus + .makers__label,
+.groups__radio:hover + .groups__label,
+.groups__radio:focus + .groups__label {
+	color: #663d15;
+}
+
+.makers__checkbox:disabled + .makers__label,
+.groups__radio:disabled + .groups__label {
+	color: #000000;
+	opacity: 0.5;
+}
+
+.no-upper {
+	text-transform: none;
+}
+
+.catalog-item {
+	background-color: #f8f8f8;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.catalog-item:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.catalog-item__price a {
+	line-height: 20px;
+	color: #ffffff;
+}
+
+.catalog b {
+	line-height: 20px;
+	background-color: #e5e5e5;
+	text-align: center;
+}
+
+.pagination__item a {
+	background-color: #000000;
+	color: #ffffff;
+}
+
+.pagination__item_active a {
+	background-color: #ffffff;
+}
+
+
+
+.product__article {
+	color: #aeaeae;
+}
+
+.product-foto__full,
+.product-foto__small li {
+	box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+}
+
+.product__price b {
+	background-color: #e5e5e5;
+	text-align: center;
+}
+
+.product__price a {
+	color: #ffffff;
+}
+
+.product-info__title {
+	font-size: 24px;
+	line-height: 30px;
+}
